@@ -4,6 +4,11 @@ import { IoCopyOutline } from "react-icons/io5";
 // Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
 
+import dynamic from "next/dynamic";
+
+// Dynamically import Lottie with SSR disabled
+const LottieWithNoSSR = dynamic(() => import("react-lottie"), { ssr: false });
+
 import { cn } from "@/lib/utils";
 
 import { BackgroundGradientAnimation } from "./GradientBg";
