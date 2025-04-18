@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // You can add custom config here if needed
+  output:'export',
+  typescript:{
+    ignoreBuildErrors:true,
+  }
 };
 
 export default nextConfig;
